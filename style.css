@@ -1,0 +1,71 @@
+:root {
+  --dark-liver: #474448;
+  --raisin-black: #2d232e;
+  --bone: #e0ddcf;
+  --eerie-black: #151315;
+  --english-lavender: #ac7b84;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(wood.png); /* credit: toptal subtle patterns */
+}
+
+#calculator {
+  background-color: var(--dark-liver);
+  border: 10px solid var(--eerie-black);
+  border-radius: 25px;
+  margin: 50px auto;
+  width: 470px;
+}
+
+#display {
+  align-items: center;
+  background-color: var(--bone);
+  border: 5px solid var(--eerie-black);
+  border-radius: 15px;
+  color: var(--raisin-black);
+  display: flex;
+  font-family: ubuntu mono;
+  font-size: 3rem;
+  height: 100px;
+  justify-content: flex-end;
+  margin: 20px 20px 10px 20px;
+  padding: 1rem;
+}
+
+#buttons {
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  width: 450px;
+}
+
+button {
+  background-color: var(--english-lavender);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 0 var(--eerie-black);
+  color: var(--raisin-black);
+  font-family: ubuntu mono;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 80px;
+  margin: 10px;
+  outline: none;
+  width: 80px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.number, #decimal, #positive-negative {
+  background-color: var(--bone);
+}
